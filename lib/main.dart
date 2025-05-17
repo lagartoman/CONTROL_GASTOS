@@ -12,16 +12,15 @@ class MiApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Control de Gastos', 
-      theme: ThemeData(// Color de fondo global
-        scaffoldBackgroundColor: const Color.fromARGB(255, 143, 117, 228), // Fondo claro
-        // Tema de texto global
-        textTheme: const TextTheme(
-          bodyLarge: TextStyle(color: Color.fromARGB(221, 199, 248, 4)), // Texto principal
-          bodyMedium: TextStyle(color: Color.fromARGB(157, 101, 250, 2)), // Texto secundario
-        ),
-        // Color primario (botones, AppBar, etc.)
-        primarySwatch: Colors.teal,
-      ),
+      theme: ThemeData(
+  scaffoldBackgroundColor: const Color(0xFFF3E5F5), // Fondo #F3E5F5
+  textTheme: const TextTheme(
+    bodyLarge: TextStyle(color: Colors.black), // Texto principal negro
+    bodyMedium: TextStyle(color: Colors.black), // Texto secundario negro
+    titleLarge: TextStyle(color: Colors.black), // Títulos negros
+  ),
+  primarySwatch: Colors.teal, // Color primario (puedes ajustarlo)
+),
       home: const HomeScreen(),
     );
   }
